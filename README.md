@@ -1,8 +1,6 @@
 # Blood-Cell-Detection
-Related to https://www.kaggle.com/datasets/adhoppin/blood-cell-detection-datatset/code
 
-# Blood-Cell-Detection
-Related to https://www.kaggle.com/datasets/adhoppin/blood-cell-detection-datatset/code
+Yolov12 detector related to https://www.kaggle.com/datasets/adhoppin/blood-cell-detection-datatset/code
 
 ## Run on machine
 
