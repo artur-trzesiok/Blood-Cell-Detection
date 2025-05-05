@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  blood-cell:
+    image: blood-cell:latest
+    container_name: blood-cell
+    platform: linux/x86_64
+    ports:
+      - "8888:8888"
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    shm_size: '2gb'
+    volumes:
+      - ./app:/opt/app
+
+    environment:
+      - "PYTHONUNBUFFERED=1"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
